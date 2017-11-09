@@ -25,3 +25,21 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+def supportVersion = "25.3.1"
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.2"
+    minSdkVersion = 14
+    targetSdkVersion = 21
+    READER_VERSION_CODE = 5400
+    READER_VERSION_NAME = "5.40.0"
+    source_compatibility = 1.7
+    target_compatibility = 1.7
+
+    libSupportDesign = "com.android.support:design:${supportVersion}"
+    libSupportAppcompat = "com.android.support:support-v4:${supportVersion}"
+    libSupportRecyclerview = "com.android.support:recyclerview-v7:${supportVersion}"
+//    libSupportAppcompatt "com.android.support:appcompat-v7:${supportVersion}"
+}
+
