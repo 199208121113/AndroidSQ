@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:background="@color/colorAccent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.x.sq.widget.ExpandableSpanTextView
+        xmlns:est = "http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_fg_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="10dp"
+        android:minLines="2"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="14dp"
+        est:estStyle="img"
+        est:expandTextColor="#ff9e3b"
+        est:trimLines="3"
+        est:setExpandable="true" />
+</android.support.constraint.ConstraintLayout>

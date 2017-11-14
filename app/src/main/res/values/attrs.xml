@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ExpandableSpanTextView">
+        <attr name="setExpandable" format="boolean"/>
+        <attr name="trimLines" format="integer"/>
+        <attr name="expandTextColor" format="color"/>
+        <attr name="estStyle" format="enum">
+            <enum name="txt" value="0"/>
+            <enum name="img" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+</resources>

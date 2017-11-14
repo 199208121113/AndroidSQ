@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.x.sq.MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context="com.x.sq.act.MainActivity">
 
-    <cn.iwgang.familiarrecyclerview.FamiliarRecyclerView
-        xmlns:frv="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/mRecycleView"
-        android:scrollbars="vertical"
-        frv:frv_divider="#e5e5e5"
-        frv:frv_dividerHeight="1px"
-        frv:frv_layoutManager="linear"
-        frv:frv_layoutManagerOrientation="vertical"
+    <me.majiajie.pagerbottomtabstrip.PageNavigationView
+        android:id="@+id/id_main_pnv_tab"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"/>
 
-</android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_main_pnv_tab"/>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <cn.iwgang.familiarrecyclerview.FamiliarRecyclerView xmlns:frv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_fg_note_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        frv:frv_divider="#e5e5e5"
+        frv:frv_dividerHeight="1px"
+        frv:frv_layoutManager="linear"
+        android:layout_below="@id/toolbar"
+        frv:frv_layoutManagerOrientation="vertical" />
+
+</android.support.constraint.ConstraintLayout>

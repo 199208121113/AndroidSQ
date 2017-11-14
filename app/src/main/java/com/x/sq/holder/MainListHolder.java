@@ -2,13 +2,11 @@ package com.x.sq.holder;
 
 import android.content.Context;
 import android.view.View;
-import android.widget.TextView;
 
 import com.x.core.adapter.NewRecyclerViewHolder;
 import com.x.sq.R;
-import com.x.sq.adapter.MainActAdapter;
+import com.x.sq.adapter.NoteAdapter;
 import com.x.sq.model.ListItem;
-import com.x.sq.model.StringItem;
 
 import cn.iwgang.familiarrecyclerview.FamiliarRecyclerView;
 
@@ -31,7 +29,7 @@ public class MainListHolder extends NewRecyclerViewHolder {
     protected void onBindItem() {
         if(getItem().getData() instanceof ListItem) {
             ListItem itemData = (ListItem) getItem().getData();
-            MainActAdapter adapter = new MainActAdapter(getMyContext());
+            NoteAdapter adapter = new NoteAdapter(getMyContext());
             familiarRecyclerViewiew.setAdapter(adapter);
             for (int i = 0; i < itemData.getDatas().size(); i++) {
                 adapter.addItem(itemData.getDatas().get(i), null);

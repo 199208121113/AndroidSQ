@@ -6,11 +6,7 @@ import android.widget.TextView;
 
 import com.x.core.adapter.NewRecyclerViewHolder;
 import com.x.sq.R;
-import com.x.sq.model.StringItem;
-
-/**
- * Created by xudafeng on 2017/11/9.
- */
+import com.x.sq.model.MainItem;
 
 public class MainActHolder extends NewRecyclerViewHolder {
     private TextView tvTitle;
@@ -25,8 +21,8 @@ public class MainActHolder extends NewRecyclerViewHolder {
 
     @Override
     protected void onBindItem() {
-        if(getItem().getData() instanceof StringItem) {
-            StringItem itemData = (StringItem) getItem().getData();
+        if(getItem().getData() instanceof MainItem) {
+            MainItem itemData = (MainItem) getItem().getData();
             tvTitle.setText(itemData.getStr());
         }
     }
