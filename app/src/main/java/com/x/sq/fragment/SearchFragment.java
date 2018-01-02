@@ -2,11 +2,9 @@ package com.x.sq.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 
+import com.x.core.base.BaseFragment;
 import com.x.core.util.ScreenUtil;
 import com.x.sq.R;
 import com.x.sq.widget.ExpandableSpanTextView;
@@ -15,11 +13,10 @@ import com.x.sq.widget.ExpandableSpanTextView;
  * Created by xudafeng on 2017/11/10.
  */
 
-public class SearchFragment extends Fragment {
-    @Nullable
+public class SearchFragment extends BaseFragment {
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fg_search, container, false);
+    protected int getContentView() {
+        return R.layout.fg_search;
     }
 
     @Override
