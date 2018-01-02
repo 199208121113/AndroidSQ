@@ -42,12 +42,10 @@ public class NoteFragment extends BaseFragment implements FamiliarRecyclerView.O
     private static final int ID_HANDLE_IMG = atomicInteger.getAndIncrement();
     private static final int ID_DRAWABLE_SUMMARY = atomicInteger.getAndIncrement();
     private static final int ID_GLIDE_DEMO = atomicInteger.getAndIncrement();
-    private static final int ID_AUDIO_AES = atomicInteger.getAndIncrement();
     private void loadData() {
         adapter.addItem(new MainItem(ID_HANDLE_IMG, "图片下载框架"), null);
         adapter.addItem(new MainItem(ID_DRAWABLE_SUMMARY, "Drawable总结"), null);
         adapter.addItem(new MainItem(ID_GLIDE_DEMO, "Glide Demo"), null);
-        adapter.addItem(new MainItem(ID_AUDIO_AES, "加密音频文件"), null);
         adapter.notifyDataSetChanged();
     }
 
@@ -60,8 +58,6 @@ public class NoteFragment extends BaseFragment implements FamiliarRecyclerView.O
 
         }else if(item.getItemId() == ID_GLIDE_DEMO) {
             activity.startActivity(GlideDemoActivity.createIntent(activity));
-        }else if(item.getItemId() == ID_AUDIO_AES) {
-            activity.startActivity(AudioAesDesTestActivity.createIntent(activity));
         }
     }
 }
