@@ -20,6 +20,7 @@ import com.x.core.base.actionbar.OnViewSizeConfirmed;
  */
 
 public abstract class BaseActivity extends FragmentActivity implements OnActionBarItemSelectedListener, OnViewSizeConfirmed{
+    protected  final String tag = this.getClass().getName();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
